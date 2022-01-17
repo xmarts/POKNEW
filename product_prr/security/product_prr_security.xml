@@ -1,0 +1,14 @@
+<odoo noupdate="1">
+    <record model="ir.module.category" id="product_review_report_management_cat">
+        <field name="name">Control of Product R R</field>
+        <field name="description">Access groups to PRR</field>
+    </record>
+    <record model="res.groups" id="all_users">
+        <field name="name">User</field>
+        <field name="category_id" ref="product_review_report_management_cat"/>
+    </record>
+    <record model="res.groups" id="management">
+        <field name="name">Manager</field>
+        <field name="category_id" ref="product_review_report_management_cat"/>
+    </record>
+</odoo>
